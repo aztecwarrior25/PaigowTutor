@@ -1,0 +1,543 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D3623260D0F684500981E51 /* PaiGowAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* PaiGowAppDelegate.m */; };
+		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
+		2899E5220DE3E06400AC0155 /* PaiGowViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2899E5210DE3E06400AC0155 /* PaiGowViewController.xib */; };
+		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
+		28D7ACF80DDB3853001CB0EB /* PaiGowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* PaiGowViewController.m */; };
+		B22E5EBB126D667F00EA5B35 /* tile.png in Resources */ = {isa = PBXBuildFile; fileRef = B22E5EBA126D667F00EA5B35 /* tile.png */; };
+		B22FC9ED12DD772A00F6DE18 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = B22FC9EC12DD772A00F6DE18 /* background.png */; };
+		B244D02112AE8D5000729150 /* TextPages_EN.txt.rtf in Resources */ = {isa = PBXBuildFile; fileRef = B244D02012AE8D5000729150 /* TextPages_EN.txt.rtf */; };
+		B244D0E912AF74D000729150 /* intro.strings in Resources */ = {isa = PBXBuildFile; fileRef = B244D0E812AF74D000729150 /* intro.strings */; };
+		B244D0EC12AF780400729150 /* CyanSquare.png in Resources */ = {isa = PBXBuildFile; fileRef = B244D0EB12AF780400729150 /* CyanSquare.png */; };
+		B244D0F112AF80A500729150 /* tile-green.png in Resources */ = {isa = PBXBuildFile; fileRef = B244D0EF12AF80A500729150 /* tile-green.png */; };
+		B27379B712B84DA700F9FB54 /* help.PNG in Resources */ = {isa = PBXBuildFile; fileRef = B27379B612B84DA700F9FB54 /* help.PNG */; };
+		B27A02DB12A1058B0094CAF2 /* GreenFelt.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B27A02D912A1058B0094CAF2 /* GreenFelt.jpg */; };
+		B27A02DC12A1058B0094CAF2 /* guideline3.png in Resources */ = {isa = PBXBuildFile; fileRef = B27A02DA12A1058B0094CAF2 /* guideline3.png */; };
+		B27A035D12A302210094CAF2 /* HelpAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B27A035C12A302210094CAF2 /* HelpAboutViewController.m */; };
+		B27A037B12A30F4B0094CAF2 /* HelpAbout.xib in Resources */ = {isa = PBXBuildFile; fileRef = B27A037A12A30F4B0094CAF2 /* HelpAbout.xib */; };
+		B27A038F12A31C0F0094CAF2 /* IntroViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B27A038E12A31C0F0094CAF2 /* IntroViewController.m */; };
+		B27A03A912A31D050094CAF2 /* Intro.xib in Resources */ = {isa = PBXBuildFile; fileRef = B27A03A812A31D050094CAF2 /* Intro.xib */; };
+		B2833C1F125C453E00B55774 /* Domino.m in Sources */ = {isa = PBXBuildFile; fileRef = B2833C1E125C453E00B55774 /* Domino.m */; };
+		B2833C24125C454C00B55774 /* Hand.m in Sources */ = {isa = PBXBuildFile; fileRef = B2833C23125C454C00B55774 /* Hand.m */; };
+		B2833C72125C632600B55774 /* Deck.m in Sources */ = {isa = PBXBuildFile; fileRef = B2833C71125C632600B55774 /* Deck.m */; };
+		B2833D19125DC98000B55774 /* Bon.png in Resources */ = {isa = PBXBuildFile; fileRef = B2833D04125DC98000B55774 /* Bon.png */; };
+		B2833D1A125DC98000B55774 /* Chong.png in Resources */ = {isa = PBXBuildFile; fileRef = B2833D05125DC98000B55774 /* Chong.png */; };
+		B2833D1B125DC98000B55774 /* ChopBot-L.png in Resources */ = {isa = PBXBuildFile; fileRef = B2833D06125DC98000B55774 /* ChopBot-L.png */; };
+		B2833D1C125DC98000B55774 /* ChopBot-R.png in Resources */ = {isa = PBXBuildFile; fileRef = B2833D07125DC98000B55774 /* ChopBot-R.png */; };
+		B2833D1D125DC98000B55774 /* ChopChit-L.png in Resources */ = {isa = PBXBuildFile; fileRef = B2833D08125DC98000B55774 /* ChopChit-L.png */; };
+		B2833D1E125DC98000B55774 /* ChopChit-R.png in Resources */ = {isa = PBXBuildFile; fileRef = B2833D09125DC98000B55774 /* ChopChit-R.png */; };
+		B2833D1F125DC98000B55774 /* ChopGow-L.png in Resources */ = {isa = PBXBuildFile; fileRef = B2833D0A125DC98000B55774 /* ChopGow-L.png */; };
+		B2833D20125DC98000B55774 /* ChopGow-R.png in Resources */ = {isa = PBXBuildFile; fileRef = B2833D0B125DC98000B55774 /* ChopGow-R.png */; };
+		B2833D21125DC98000B55774 /* ChopNg-L.png in Resources */ = {isa = PBXBuildFile; fileRef = B2833D0C125DC98000B55774 /* ChopNg-L.png */; };
+		B2833D22125DC98000B55774 /* ChopNg-R.png in Resources */ = {isa = PBXBuildFile; fileRef = B2833D0D125DC98000B55774 /* ChopNg-R.png */; };
+		B2833D23125DC98000B55774 /* Day.png in Resources */ = {isa = PBXBuildFile; fileRef = B2833D0E125DC98000B55774 /* Day.png */; };
+		B2833D24125DC98000B55774 /* Foo.png in Resources */ = {isa = PBXBuildFile; fileRef = B2833D0F125DC98000B55774 /* Foo.png */; };
+		B2833D25125DC98000B55774 /* GeeJoon-3.png in Resources */ = {isa = PBXBuildFile; fileRef = B2833D10125DC98000B55774 /* GeeJoon-3.png */; };
+		B2833D26125DC98000B55774 /* GeeJoon-6.png in Resources */ = {isa = PBXBuildFile; fileRef = B2833D11125DC98000B55774 /* GeeJoon-6.png */; };
+		B2833D27125DC98000B55774 /* Gor.png in Resources */ = {isa = PBXBuildFile; fileRef = B2833D12125DC98000B55774 /* Gor.png */; };
+		B2833D28125DC98000B55774 /* Look.png in Resources */ = {isa = PBXBuildFile; fileRef = B2833D13125DC98000B55774 /* Look.png */; };
+		B2833D29125DC98000B55774 /* Mooy.png in Resources */ = {isa = PBXBuildFile; fileRef = B2833D14125DC98000B55774 /* Mooy.png */; };
+		B2833D2A125DC98000B55774 /* Ping.png in Resources */ = {isa = PBXBuildFile; fileRef = B2833D15125DC98000B55774 /* Ping.png */; };
+		B2833D2B125DC98000B55774 /* Teen.png in Resources */ = {isa = PBXBuildFile; fileRef = B2833D16125DC98000B55774 /* Teen.png */; };
+		B2833D2C125DC98000B55774 /* Tit.png in Resources */ = {isa = PBXBuildFile; fileRef = B2833D17125DC98000B55774 /* Tit.png */; };
+		B2833D2D125DC98000B55774 /* Yun.png in Resources */ = {isa = PBXBuildFile; fileRef = B2833D18125DC98000B55774 /* Yun.png */; };
+		B2833E02125EC03F00B55774 /* UIMovableImageTile.m in Sources */ = {isa = PBXBuildFile; fileRef = B2833E01125EC03F00B55774 /* UIMovableImageTile.m */; };
+		B2833EFD12630FD400B55774 /* guideline-halfres.png in Resources */ = {isa = PBXBuildFile; fileRef = B2833EFC12630FD400B55774 /* guideline-halfres.png */; };
+		B287D1BA12713949005E29F5 /* HomeScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B287D1B812713949005E29F5 /* HomeScreenViewController.m */; };
+		B287D1BB12713949005E29F5 /* HomeScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B287D1B912713949005E29F5 /* HomeScreenViewController.xib */; };
+		B2C43D7C126AE8FA00DB8A51 /* TilePracticeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2C43D7A126AE8FA00DB8A51 /* TilePracticeViewController.xib */; };
+		B2C43D95126AEB0E00DB8A51 /* TilePracticeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2C43D94126AEB0E00DB8A51 /* TilePracticeViewController.m */; };
+		B2CC8C35127E79D80066B7D5 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2CC8C34127E79D80066B7D5 /* QuartzCore.framework */; };
+		B2CC8CC3127EBF2D0066B7D5 /* success.png in Resources */ = {isa = PBXBuildFile; fileRef = B2CC8CC0127EBF2D0066B7D5 /* success.png */; };
+		B2CC8CC4127EBF2D0066B7D5 /* cancel.png in Resources */ = {isa = PBXBuildFile; fileRef = B2CC8CC1127EBF2D0066B7D5 /* cancel.png */; };
+		B2CC8CC5127EBF2D0066B7D5 /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = B2CC8CC2127EBF2D0066B7D5 /* home.png */; };
+		B2CEA687136AA7F300D11312 /* tile-gloss.png in Resources */ = {isa = PBXBuildFile; fileRef = B2CEA686136AA7F300D11312 /* tile-gloss.png */; };
+		B2D03CAF12B752E5004DBE37 /* appicon.png in Resources */ = {isa = PBXBuildFile; fileRef = B2D03CAE12B752E5004DBE37 /* appicon.png */; };
+		B2DBC69112B0B2E900EBB231 /* ChooseDomino.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2DBC69012B0B2E900EBB231 /* ChooseDomino.xib */; };
+		B2DBC69712B0B33400EBB231 /* ChooseDominoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2DBC69612B0B33400EBB231 /* ChooseDominoViewController.m */; };
+		B2DBC70312B3F71800EBB231 /* about.html in Resources */ = {isa = PBXBuildFile; fileRef = B2DBC70212B3F71800EBB231 /* about.html */; };
+		B2DBC77F12B4A5FE00EBB231 /* help.html in Resources */ = {isa = PBXBuildFile; fileRef = B2DBC77E12B4A5FE00EBB231 /* help.html */; };
+		B2EEA1AC128501060062E992 /* TilePicker.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2EEA1AB128501060062E992 /* TilePicker.xib */; };
+		B2EEA1B8128502A50062E992 /* TilePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2EEA1B7128502A50062E992 /* TilePickerViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1D3623240D0F684500981E51 /* PaiGowAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaiGowAppDelegate.h; sourceTree = "<group>"; };
+		1D3623250D0F684500981E51 /* PaiGowAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaiGowAppDelegate.m; sourceTree = "<group>"; };
+		1D6058910D05DD3D006BFB54 /* PaiGow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PaiGow.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		288765A40DF7441C002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		2899E5210DE3E06400AC0155 /* PaiGowViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PaiGowViewController.xib; sourceTree = "<group>"; };
+		28AD733E0D9D9553002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		28D7ACF60DDB3853001CB0EB /* PaiGowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaiGowViewController.h; sourceTree = "<group>"; };
+		28D7ACF70DDB3853001CB0EB /* PaiGowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaiGowViewController.m; sourceTree = "<group>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		32CA4F630368D1EE00C91783 /* PaiGow_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaiGow_Prefix.pch; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* PaiGow-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "PaiGow-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+		B22E5EBA126D667F00EA5B35 /* tile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tile.png; sourceTree = "<group>"; };
+		B22FC9EC12DD772A00F6DE18 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
+		B244D02012AE8D5000729150 /* TextPages_EN.txt.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = TextPages_EN.txt.rtf; sourceTree = "<group>"; };
+		B244D0E812AF74D000729150 /* intro.strings */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; path = intro.strings; sourceTree = "<group>"; };
+		B244D0EB12AF780400729150 /* CyanSquare.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CyanSquare.png; sourceTree = "<group>"; };
+		B244D0EF12AF80A500729150 /* tile-green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tile-green.png"; sourceTree = "<group>"; };
+		B27379B612B84DA700F9FB54 /* help.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = help.PNG; sourceTree = "<group>"; };
+		B27A02D912A1058B0094CAF2 /* GreenFelt.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = GreenFelt.jpg; sourceTree = "<group>"; };
+		B27A02DA12A1058B0094CAF2 /* guideline3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = guideline3.png; sourceTree = "<group>"; };
+		B27A035B12A302210094CAF2 /* HelpAboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelpAboutViewController.h; sourceTree = "<group>"; };
+		B27A035C12A302210094CAF2 /* HelpAboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelpAboutViewController.m; sourceTree = "<group>"; };
+		B27A037A12A30F4B0094CAF2 /* HelpAbout.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HelpAbout.xib; sourceTree = "<group>"; };
+		B27A038D12A31C0F0094CAF2 /* IntroViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IntroViewController.h; sourceTree = "<group>"; };
+		B27A038E12A31C0F0094CAF2 /* IntroViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IntroViewController.m; sourceTree = "<group>"; };
+		B27A03A812A31D050094CAF2 /* Intro.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Intro.xib; sourceTree = "<group>"; };
+		B2833C1D125C453E00B55774 /* Domino.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Domino.h; sourceTree = "<group>"; };
+		B2833C1E125C453E00B55774 /* Domino.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Domino.m; sourceTree = "<group>"; };
+		B2833C22125C454C00B55774 /* Hand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Hand.h; sourceTree = "<group>"; };
+		B2833C23125C454C00B55774 /* Hand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Hand.m; sourceTree = "<group>"; };
+		B2833C70125C632600B55774 /* Deck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Deck.h; sourceTree = "<group>"; };
+		B2833C71125C632600B55774 /* Deck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Deck.m; sourceTree = "<group>"; };
+		B2833D04125DC98000B55774 /* Bon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Bon.png; path = Paigowtiles/Bon.png; sourceTree = "<group>"; };
+		B2833D05125DC98000B55774 /* Chong.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Chong.png; path = Paigowtiles/Chong.png; sourceTree = "<group>"; };
+		B2833D06125DC98000B55774 /* ChopBot-L.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ChopBot-L.png"; path = "Paigowtiles/ChopBot-L.png"; sourceTree = "<group>"; };
+		B2833D07125DC98000B55774 /* ChopBot-R.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ChopBot-R.png"; path = "Paigowtiles/ChopBot-R.png"; sourceTree = "<group>"; };
+		B2833D08125DC98000B55774 /* ChopChit-L.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ChopChit-L.png"; path = "Paigowtiles/ChopChit-L.png"; sourceTree = "<group>"; };
+		B2833D09125DC98000B55774 /* ChopChit-R.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ChopChit-R.png"; path = "Paigowtiles/ChopChit-R.png"; sourceTree = "<group>"; };
+		B2833D0A125DC98000B55774 /* ChopGow-L.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ChopGow-L.png"; path = "Paigowtiles/ChopGow-L.png"; sourceTree = "<group>"; };
+		B2833D0B125DC98000B55774 /* ChopGow-R.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ChopGow-R.png"; path = "Paigowtiles/ChopGow-R.png"; sourceTree = "<group>"; };
+		B2833D0C125DC98000B55774 /* ChopNg-L.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ChopNg-L.png"; path = "Paigowtiles/ChopNg-L.png"; sourceTree = "<group>"; };
+		B2833D0D125DC98000B55774 /* ChopNg-R.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ChopNg-R.png"; path = "Paigowtiles/ChopNg-R.png"; sourceTree = "<group>"; };
+		B2833D0E125DC98000B55774 /* Day.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Day.png; path = Paigowtiles/Day.png; sourceTree = "<group>"; };
+		B2833D0F125DC98000B55774 /* Foo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Foo.png; path = Paigowtiles/Foo.png; sourceTree = "<group>"; };
+		B2833D10125DC98000B55774 /* GeeJoon-3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "GeeJoon-3.png"; path = "Paigowtiles/GeeJoon-3.png"; sourceTree = "<group>"; };
+		B2833D11125DC98000B55774 /* GeeJoon-6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "GeeJoon-6.png"; path = "Paigowtiles/GeeJoon-6.png"; sourceTree = "<group>"; };
+		B2833D12125DC98000B55774 /* Gor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Gor.png; path = Paigowtiles/Gor.png; sourceTree = "<group>"; };
+		B2833D13125DC98000B55774 /* Look.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Look.png; path = Paigowtiles/Look.png; sourceTree = "<group>"; };
+		B2833D14125DC98000B55774 /* Mooy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Mooy.png; path = Paigowtiles/Mooy.png; sourceTree = "<group>"; };
+		B2833D15125DC98000B55774 /* Ping.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Ping.png; path = Paigowtiles/Ping.png; sourceTree = "<group>"; };
+		B2833D16125DC98000B55774 /* Teen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Teen.png; path = Paigowtiles/Teen.png; sourceTree = "<group>"; };
+		B2833D17125DC98000B55774 /* Tit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Tit.png; path = Paigowtiles/Tit.png; sourceTree = "<group>"; };
+		B2833D18125DC98000B55774 /* Yun.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Yun.png; path = Paigowtiles/Yun.png; sourceTree = "<group>"; };
+		B2833E00125EC03F00B55774 /* UIMovableImageTile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIMovableImageTile.h; sourceTree = "<group>"; };
+		B2833E01125EC03F00B55774 /* UIMovableImageTile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIMovableImageTile.m; sourceTree = "<group>"; };
+		B2833EFC12630FD400B55774 /* guideline-halfres.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "guideline-halfres.png"; sourceTree = "<group>"; };
+		B287D1B712713949005E29F5 /* HomeScreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeScreenViewController.h; sourceTree = "<group>"; };
+		B287D1B812713949005E29F5 /* HomeScreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeScreenViewController.m; sourceTree = "<group>"; };
+		B287D1B912713949005E29F5 /* HomeScreenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = HomeScreenViewController.xib; path = Classes/HomeScreenViewController.xib; sourceTree = "<group>"; };
+		B2C43D7A126AE8FA00DB8A51 /* TilePracticeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = TilePracticeViewController.xib; path = Classes/TilePracticeViewController.xib; sourceTree = "<group>"; };
+		B2C43D93126AEB0E00DB8A51 /* TilePracticeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TilePracticeViewController.h; sourceTree = "<group>"; };
+		B2C43D94126AEB0E00DB8A51 /* TilePracticeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TilePracticeViewController.m; sourceTree = "<group>"; };
+		B2CC8C34127E79D80066B7D5 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		B2CC8CC0127EBF2D0066B7D5 /* success.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = success.png; sourceTree = "<group>"; };
+		B2CC8CC1127EBF2D0066B7D5 /* cancel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cancel.png; sourceTree = "<group>"; };
+		B2CC8CC2127EBF2D0066B7D5 /* home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home.png; sourceTree = "<group>"; };
+		B2CEA686136AA7F300D11312 /* tile-gloss.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tile-gloss.png"; sourceTree = "<group>"; };
+		B2D03CAE12B752E5004DBE37 /* appicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = appicon.png; path = Paigowtiles/appicon.png; sourceTree = "<group>"; };
+		B2DBC69012B0B2E900EBB231 /* ChooseDomino.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChooseDomino.xib; sourceTree = "<group>"; };
+		B2DBC69512B0B33400EBB231 /* ChooseDominoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChooseDominoViewController.h; sourceTree = "<group>"; };
+		B2DBC69612B0B33400EBB231 /* ChooseDominoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChooseDominoViewController.m; sourceTree = "<group>"; };
+		B2DBC70212B3F71800EBB231 /* about.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = about.html; sourceTree = "<group>"; };
+		B2DBC77E12B4A5FE00EBB231 /* help.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = help.html; sourceTree = "<group>"; };
+		B2EEA1AB128501060062E992 /* TilePicker.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TilePicker.xib; sourceTree = "<group>"; };
+		B2EEA1B6128502A50062E992 /* TilePickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TilePickerViewController.h; sourceTree = "<group>"; };
+		B2EEA1B7128502A50062E992 /* TilePickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TilePickerViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
+				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
+				288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */,
+				B2CC8C35127E79D80066B7D5 /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				B27A035B12A302210094CAF2 /* HelpAboutViewController.h */,
+				B27A035C12A302210094CAF2 /* HelpAboutViewController.m */,
+				B287D1B712713949005E29F5 /* HomeScreenViewController.h */,
+				B287D1B812713949005E29F5 /* HomeScreenViewController.m */,
+				B2C43D93126AEB0E00DB8A51 /* TilePracticeViewController.h */,
+				B2C43D94126AEB0E00DB8A51 /* TilePracticeViewController.m */,
+				28D7ACF70DDB3853001CB0EB /* PaiGowViewController.m */,
+				28D7ACF60DDB3853001CB0EB /* PaiGowViewController.h */,
+				B2833E00125EC03F00B55774 /* UIMovableImageTile.h */,
+				B2833E01125EC03F00B55774 /* UIMovableImageTile.m */,
+				B2833C70125C632600B55774 /* Deck.h */,
+				B2833C71125C632600B55774 /* Deck.m */,
+				B2833C22125C454C00B55774 /* Hand.h */,
+				B2833C23125C454C00B55774 /* Hand.m */,
+				1D3623240D0F684500981E51 /* PaiGowAppDelegate.h */,
+				1D3623250D0F684500981E51 /* PaiGowAppDelegate.m */,
+				B2833C1D125C453E00B55774 /* Domino.h */,
+				B2833C1E125C453E00B55774 /* Domino.m */,
+				B2EEA1B6128502A50062E992 /* TilePickerViewController.h */,
+				B2EEA1B7128502A50062E992 /* TilePickerViewController.m */,
+				B27A038D12A31C0F0094CAF2 /* IntroViewController.h */,
+				B27A038E12A31C0F0094CAF2 /* IntroViewController.m */,
+				B2DBC69512B0B33400EBB231 /* ChooseDominoViewController.h */,
+				B2DBC69612B0B33400EBB231 /* ChooseDominoViewController.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D6058910D05DD3D006BFB54 /* PaiGow.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32CA4F630368D1EE00C91783 /* PaiGow_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B287D260127162F9005E29F5 /* images */,
+				B2CEA686136AA7F300D11312 /* tile-gloss.png */,
+				B27379B612B84DA700F9FB54 /* help.PNG */,
+				B2DBC77E12B4A5FE00EBB231 /* help.html */,
+				B244D0EF12AF80A500729150 /* tile-green.png */,
+				B244D0EB12AF780400729150 /* CyanSquare.png */,
+				B244D0E812AF74D000729150 /* intro.strings */,
+				B244D02012AE8D5000729150 /* TextPages_EN.txt.rtf */,
+				B287D1B912713949005E29F5 /* HomeScreenViewController.xib */,
+				2899E5210DE3E06400AC0155 /* PaiGowViewController.xib */,
+				B2C43D7A126AE8FA00DB8A51 /* TilePracticeViewController.xib */,
+				B27A037A12A30F4B0094CAF2 /* HelpAbout.xib */,
+				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
+				B2EEA1AB128501060062E992 /* TilePicker.xib */,
+				B27A03A812A31D050094CAF2 /* Intro.xib */,
+				8D1107310486CEB800E47090 /* PaiGow-Info.plist */,
+				B2DBC69012B0B2E900EBB231 /* ChooseDomino.xib */,
+				B2DBC70212B3F71800EBB231 /* about.html */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B2CC8C34127E79D80066B7D5 /* QuartzCore.framework */,
+				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
+				1D30AB110D05D00D00671497 /* Foundation.framework */,
+				288765A40DF7441C002DB57D /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B287D260127162F9005E29F5 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				B22FC9EC12DD772A00F6DE18 /* background.png */,
+				B2D03CAE12B752E5004DBE37 /* appicon.png */,
+				B27A02D912A1058B0094CAF2 /* GreenFelt.jpg */,
+				B27A02DA12A1058B0094CAF2 /* guideline3.png */,
+				B2CC8CC0127EBF2D0066B7D5 /* success.png */,
+				B2CC8CC1127EBF2D0066B7D5 /* cancel.png */,
+				B2CC8CC2127EBF2D0066B7D5 /* home.png */,
+				B22E5EBA126D667F00EA5B35 /* tile.png */,
+				B2833EFC12630FD400B55774 /* guideline-halfres.png */,
+				B2833D04125DC98000B55774 /* Bon.png */,
+				B2833D05125DC98000B55774 /* Chong.png */,
+				B2833D06125DC98000B55774 /* ChopBot-L.png */,
+				B2833D07125DC98000B55774 /* ChopBot-R.png */,
+				B2833D08125DC98000B55774 /* ChopChit-L.png */,
+				B2833D09125DC98000B55774 /* ChopChit-R.png */,
+				B2833D0A125DC98000B55774 /* ChopGow-L.png */,
+				B2833D0B125DC98000B55774 /* ChopGow-R.png */,
+				B2833D0C125DC98000B55774 /* ChopNg-L.png */,
+				B2833D0D125DC98000B55774 /* ChopNg-R.png */,
+				B2833D0E125DC98000B55774 /* Day.png */,
+				B2833D0F125DC98000B55774 /* Foo.png */,
+				B2833D10125DC98000B55774 /* GeeJoon-3.png */,
+				B2833D11125DC98000B55774 /* GeeJoon-6.png */,
+				B2833D12125DC98000B55774 /* Gor.png */,
+				B2833D13125DC98000B55774 /* Look.png */,
+				B2833D14125DC98000B55774 /* Mooy.png */,
+				B2833D15125DC98000B55774 /* Ping.png */,
+				B2833D16125DC98000B55774 /* Teen.png */,
+				B2833D17125DC98000B55774 /* Tit.png */,
+				B2833D18125DC98000B55774 /* Yun.png */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* PaiGow */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "PaiGow" */;
+			buildPhases = (
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PaiGow;
+			productName = PaiGow;
+			productReference = 1D6058910D05DD3D006BFB54 /* PaiGow.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "PaiGow" */;
+			compatibilityVersion = "Xcode 3.1";
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* PaiGow */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
+				2899E5220DE3E06400AC0155 /* PaiGowViewController.xib in Resources */,
+				B2833D19125DC98000B55774 /* Bon.png in Resources */,
+				B2833D1A125DC98000B55774 /* Chong.png in Resources */,
+				B2833D1B125DC98000B55774 /* ChopBot-L.png in Resources */,
+				B2833D1C125DC98000B55774 /* ChopBot-R.png in Resources */,
+				B2833D1D125DC98000B55774 /* ChopChit-L.png in Resources */,
+				B2833D1E125DC98000B55774 /* ChopChit-R.png in Resources */,
+				B2833D1F125DC98000B55774 /* ChopGow-L.png in Resources */,
+				B2833D20125DC98000B55774 /* ChopGow-R.png in Resources */,
+				B2833D21125DC98000B55774 /* ChopNg-L.png in Resources */,
+				B2833D22125DC98000B55774 /* ChopNg-R.png in Resources */,
+				B2833D23125DC98000B55774 /* Day.png in Resources */,
+				B2833D24125DC98000B55774 /* Foo.png in Resources */,
+				B2833D25125DC98000B55774 /* GeeJoon-3.png in Resources */,
+				B2833D26125DC98000B55774 /* GeeJoon-6.png in Resources */,
+				B2833D27125DC98000B55774 /* Gor.png in Resources */,
+				B2833D28125DC98000B55774 /* Look.png in Resources */,
+				B2833D29125DC98000B55774 /* Mooy.png in Resources */,
+				B2833D2A125DC98000B55774 /* Ping.png in Resources */,
+				B2833D2B125DC98000B55774 /* Teen.png in Resources */,
+				B2833D2C125DC98000B55774 /* Tit.png in Resources */,
+				B2833D2D125DC98000B55774 /* Yun.png in Resources */,
+				B2833EFD12630FD400B55774 /* guideline-halfres.png in Resources */,
+				B2C43D7C126AE8FA00DB8A51 /* TilePracticeViewController.xib in Resources */,
+				B22E5EBB126D667F00EA5B35 /* tile.png in Resources */,
+				B287D1BB12713949005E29F5 /* HomeScreenViewController.xib in Resources */,
+				B2CC8CC3127EBF2D0066B7D5 /* success.png in Resources */,
+				B2CC8CC4127EBF2D0066B7D5 /* cancel.png in Resources */,
+				B2CC8CC5127EBF2D0066B7D5 /* home.png in Resources */,
+				B2EEA1AC128501060062E992 /* TilePicker.xib in Resources */,
+				B27A02DB12A1058B0094CAF2 /* GreenFelt.jpg in Resources */,
+				B27A02DC12A1058B0094CAF2 /* guideline3.png in Resources */,
+				B27A037B12A30F4B0094CAF2 /* HelpAbout.xib in Resources */,
+				B27A03A912A31D050094CAF2 /* Intro.xib in Resources */,
+				B244D02112AE8D5000729150 /* TextPages_EN.txt.rtf in Resources */,
+				B244D0E912AF74D000729150 /* intro.strings in Resources */,
+				B244D0EC12AF780400729150 /* CyanSquare.png in Resources */,
+				B244D0F112AF80A500729150 /* tile-green.png in Resources */,
+				B2DBC69112B0B2E900EBB231 /* ChooseDomino.xib in Resources */,
+				B2DBC70312B3F71800EBB231 /* about.html in Resources */,
+				B2DBC77F12B4A5FE00EBB231 /* help.html in Resources */,
+				B2D03CAF12B752E5004DBE37 /* appicon.png in Resources */,
+				B27379B712B84DA700F9FB54 /* help.PNG in Resources */,
+				B22FC9ED12DD772A00F6DE18 /* background.png in Resources */,
+				B2CEA687136AA7F300D11312 /* tile-gloss.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
+				1D3623260D0F684500981E51 /* PaiGowAppDelegate.m in Sources */,
+				28D7ACF80DDB3853001CB0EB /* PaiGowViewController.m in Sources */,
+				B2833C1F125C453E00B55774 /* Domino.m in Sources */,
+				B2833C24125C454C00B55774 /* Hand.m in Sources */,
+				B2833C72125C632600B55774 /* Deck.m in Sources */,
+				B2833E02125EC03F00B55774 /* UIMovableImageTile.m in Sources */,
+				B2C43D95126AEB0E00DB8A51 /* TilePracticeViewController.m in Sources */,
+				B287D1BA12713949005E29F5 /* HomeScreenViewController.m in Sources */,
+				B2EEA1B8128502A50062E992 /* TilePickerViewController.m in Sources */,
+				B27A035D12A302210094CAF2 /* HelpAboutViewController.m in Sources */,
+				B27A038F12A31C0F0094CAF2 /* IntroViewController.m in Sources */,
+				B2DBC69712B0B33400EBB231 /* ChooseDominoViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Larry Nakamura (2XDHYJ956X)";
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = PaiGow_Prefix.pch;
+				INFOPLIST_FILE = "PaiGow-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 3.1;
+				PRODUCT_NAME = PaiGow;
+				SDKROOT = iphoneos4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = PaiGow_Prefix.pch;
+				INFOPLIST_FILE = "PaiGow-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 3.1;
+				PRODUCT_NAME = PaiGow;
+				SDKROOT = iphonesimulator3.1.3;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B249956212BF3F9D0034580F /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = iphoneos4.2;
+			};
+			name = Distribution;
+		};
+		B249956312BF3F9D0034580F /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Larry Nakamura";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Larry Nakamura";
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = PaiGow_Prefix.pch;
+				INFOPLIST_FILE = "PaiGow-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 3.1;
+				PRODUCT_NAME = PaiGow;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "067A4861-112F-415F-A11F-357A2E9A1207";
+				SDKROOT = iphoneos4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Distribution;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = iphoneos3.2;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = iphoneos3.1.3;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "PaiGow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Debug */,
+				1D6058950D05DD3E006BFB54 /* Release */,
+				B249956312BF3F9D0034580F /* Distribution */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "PaiGow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+				B249956212BF3F9D0034580F /* Distribution */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}
